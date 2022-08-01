@@ -18,3 +18,13 @@
     display: flex;
     justify-content: flex-start;
 }
+@media(max-width:400px){
+    .formField input{
+        width: 200px;
+    }
+    .listItems{
+        width: 250px;
+        height: 50px;
+        margin:20px 0 ;
+    }
+}
