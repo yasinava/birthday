@@ -17,6 +17,9 @@ const AddPeople = () => {
 
   const changeHandler = (event) => {
     setData({ ...data, [event.target.name]: event.target.value });
+    if([event.target.name]==="file"){
+      console.log(event.target.value);
+    }
   };
 
   const submitHandler = (event) => {
@@ -27,7 +30,6 @@ const AddPeople = () => {
       alert("please enter date or name")
     }
 };
-console.log(state);
   return (
     <div className={styles.container}>
       <form onSubmit={submitHandler} className={styles.formContainer}>

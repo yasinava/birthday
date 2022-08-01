@@ -57,9 +57,11 @@ const reducer = (state, action) => {
       const newItem = state.items.filter(
         (item) => item.name !== action.payload.name
       );
+      const newFakeItem = state.fakeItems.filter(item=> item.id !== action.payload.id)
       return {
         ...state,
         items: [...newItem],
+        fakeItems:[...newFakeItem],
       };
       case "CLEAR":
         return{
