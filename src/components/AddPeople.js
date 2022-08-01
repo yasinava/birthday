@@ -55,5 +55,5 @@ console.log(state);
     </div>
   );
 };
-
+// update
 export default AddPeople;
